@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    
+  <style>
+      body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color:#6aaeb596;
+      color: #1D3557;
+      margin: 0;
+      padding: 0;
+    }
+
+
+
+
+.container {
+  max-width: 400px;
+  margin: auto;
+}
+
+h2, h3 {
+  text-align: center;
+  color: #005a87;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.btn {
+  display: inline-block;
+  background: #25D366;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #128C7E;
+}
+
+/* Animations */
+.fade-in { animation: fadeIn 4s ease-in; }
+.slide-up { animation: slideUp 4s ease-out; }
+.zoom-in { animation: zoomIn 4s ease; }
+.pop-in { animation: popIn 4s ease-in-out; }
+.bounce { animation: bounceIn 4s ease; }
+.pulse { animation: pulse 4s infinite; }
+.spin { animation: spin 4s linear; }
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes slideUp {
+  from {transform: translateY(50px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}
+
+@keyframes zoomIn {
+  from {transform: scale(0.5); opacity: 0;}
+  to {transform: scale(1); opacity: 1;}
+}
+
+@keyframes popIn {
+  from {transform: scale(0.8); opacity: 0;}
+  to {transform: scale(1); opacity: 1;}
+}
+
+@keyframes bounceIn {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-20px);}
+     60% {transform: translateY(-10px);}
+}
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.05);}
+  100% {transform: scale(1);}
+}
+
+@keyframes spin {
+  from {transform: rotateY(0deg);}
+  to {transform: rotateY(360deg);}
+}
+```
+
+
+
+
+    header {
+      background-color: #1D3557;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .logo {
+      width: 80px;
+      border-radius: 50%;
+    }
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+nav {
+  background-color: #0f172a;
+  padding: 15px 0;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-size: 17px;
+  text-decoration: none;
+  padding: 10px 0px ;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 0.4s ease;
+  z-index: 1;
+}
+
+nav ul li a::before {
+  content: '';
+  position: absolute;
+  left: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, #00feba, #5b5ea6);
+  transition: 0.5s ease;
+  z-index: 0;
+  border-radius: 8px;
+}
+
+nav ul li a:hover::before {
+  left: 0;
+}
+
+nav ul li a i {
+  z-index: 1;
+}
+
+nav ul li a span {
+  z-index: 1;
+  position: relative;
+}
+  footer{
+       background-color: #1D3557;
+      color: white;
+      text-align: center;
+      padding: 20px;
+  }
+  </style>
+</head>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+<body>
+    <header>
+<svg width="80" height="80" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Circle background with shadow -->
+  <circle cx="50" cy="50" r="45" fill="#1D3557" stroke="#A8DADC" stroke-width="3" filter="url(#shadow)" />
+
+  <!-- Programming Icon -->
+  <text x="50" y="32" text-anchor="middle" font-size="12" fill="#F1FAEE" font-family="monospace">
+    &lt;/&gt;
+  </text>
+
+  <!-- Main A letter -->
+  <text x="50" y="60" text-anchor="middle" font-size="36" fill="#F1FAEE" font-family="Segoe UI, sans-serif">
+    A
+  </text>
+
+  <!-- Tiny tagline -->
+  <text x="50" y="75" text-anchor="middle" font-size="6" fill="#F1FAEE" font-family="Arial, sans-serif">
+    Web Dev
+  </text>
+
+  <!-- Shadow filter -->
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+</svg>
+          <h1>Ateeq web solution</h1>
+          
+<nav>
+  <ul>
+    <li><a href="#"><i class="fas fa-house"></i><span>Home</span></a></li>
+<li><a href="about me.html"><i class="fas fa-user"></i><span>About</span></a></li>
+    <li><a href="contact us.html"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
+  </ul>
+</nav>
+
+
+    </header>
+      
+      <div class="container">
+  <h2 class="fade-in">👋 Welcome to my personal blog!</h2>
+  <p class="slide-up">
+    I’m a passionate web developer and founder of <strong>Ateeq Website Solutions</strong> — 
+    a platform that builds smart, fast & mobile-friendly websites.
+  </p>
+
+  <h3 class="zoom-in">💼 Services We Offer</h3>
+  <ul class="list pop-in">
+    <li>✅ Custom Design web and app</li>
+    <li>🛠️ Bug Fixing & Maintenance</li>
+    <li>🌐 Hosting & Domain Setup</li>
+    <li>📝 Blog & Portfolio Websites</li>
+    <li>📱 Mobile-Friendly Design</li>
+    <li>⚡ Fast Delivery & Affordable Pricing</li>
+  </ul>
+
+  <div class="contact bounce">
+    <p>📞 <strong>Contact Me:</strong> Let’s bring your idea to life!</p>
+    <a href="https://wa.me/2349124646346" class="btn pulse">📩 Chat on WhatsApp</a>
+  </div>
+
+  <h3 class="spin">✨ Why Choose Us?</h3>
+  <ul class="list">
+    <li>✅ Professional</li>
+    <li>✅ Simple</li>
+    <li>✅ Client-Focused</li>
+  </ul>
+</div>
+```
+    <br><br>
+      
+      <footer style="text-align: center; padding: 20px; background: #1D3557; color: #fff;">
+  <p>Connect with me:</p>
+
+  <a href="https://wa.me/2349124646346" target="_blank" style="color: #25D366; margin: 0 10px;">
+    <i class="fab fa-whatsapp fa-lg"></i>
+  </a>
+
+  <a href="#" style="color: #1877F2; margin: 0 10px;">
+    <i class="fab fa-facebook fa-lg"></i>
+  </a>
+
+  <a href="#" style="color: #1DA1F2; margin: 0 10px;">
+    <i class="fab fa-twitter fa-lg"></i>
+  </a>
+
+  <a href="#" style="color: #0A66C2; margin: 0 10px;">
+    <i class="fab fa-linkedin fa-lg"></i>
+  </a>
+
+  <a href="mailto: sadeeqhabeeb42@gmail.com" style="color: #fff; margin: 0 10px;">
+    <i class="fas fa-envelope fa-lg"></i>
+  </a>
+
+  <p style="margin-top: 10px;">&copy; 2025 Ateeq Web Solutions</p>
+</footer>
+      
+</body>
+
+</html>
