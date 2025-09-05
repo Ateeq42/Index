@@ -20,7 +20,11 @@
     }
 
 
-
+.{
+     marigin:0;
+     padding:0;
+     box-sizing:border-box;
+}
 
 .container {
   max-width: 400px;
@@ -98,7 +102,7 @@ h2, h3 {
   from {transform: rotateY(0deg);}
   to {transform: rotateY(360deg);}
 }
-```
+
 
 
 
@@ -107,9 +111,20 @@ h2, h3 {
       background-color: #1D3557;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding:10px 20px;
+         align-items:center;
+         display:flex;
+         justify-content:space-between;
+         flex-wraap:wrap;
+         
     }
-
+@media(max-width:768px){
+     header{
+          flex-direction:column;
+          align-items:flex-start;
+     }
+}
+       
     .logo {
       width: 80px;
       border-radius: 50%;
