@@ -1,36 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta name="viewport" content="width=device-width,initial-scale=0.1">
-         
     <meta charset="UTF-8">
     <title>Page title</title>
     
   <style>
-       
       body {
-          
       font-family: 'Segoe UI', sans-serif;
       background-color:#6aaeb596;
       color: #1D3557;
       margin: 0;
-     padding: 0;
-           font-size:10px;
-           
+      padding: 0;
+        font-size:4;
+        height:auto;
     }
 
 
-.{
-     marigin:0;
-     padding:0;
-     box-sizing:border-box;
+h1{
+  color:white;
+    display:inline-block;
 }
 
 .container {
- 
-  margin: auto;
-     width:50%;
-   max-width:300%;
+  width:600px;
+  max-width: 2000px;
+  margin: 100px;
+  font-weight:bld;
+  font-size:40px;
 }
 
 h2, h3 {
@@ -47,7 +43,7 @@ h2, h3 {
   display: inline-block;
   background: #25D366;
   color: white;
-  padding:20px 15px;
+  padding: 10px 15px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
@@ -110,40 +106,24 @@ h2, h3 {
     header {
       background-color: #1D3557;
       color: white;
-      text-align: center;
-     padding: 15px;
-  
-
-   
-   display: flex;
-     
- justify-content: space-between;
-  
-    align-items: center;
-  
-    flex-wrap: wrap;
- 
-         
-        
-         
+      text-align: ;
+      padding: 100px 30px;
     }
-@media(max-width:768px){
-     header{
-          flex-direction:column;
-          align-items:flex-start;
-     }
-}
-       
+
     .logo {
-      width: 80px;
+       
+      width: 500px;
       border-radius: 50%;
+       dispaly:inline-block;
     }
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
 nav {
   background-color: #0f172a;
   padding: 15px 0;
+ 
   box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+  
 }
 
 nav ul {
@@ -159,15 +139,17 @@ nav ul li a {
   position: relative;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px; 
+ 
   color: white;
-  font-size: 18px;
+  font-size: 40px;
   text-decoration: none;
   padding: 10px 0px ;
   border-radius: 8px;
   overflow: hidden;
   transition: 0.4s ease;
   z-index: 1;
+  
 }
 
 nav ul li a::before {
@@ -199,12 +181,12 @@ nav ul li a span {
        background-color: #1D3557;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 0;
   }
-       .hero {
+    .hero {
   text-align: center;
   padding: 40px 20px;
-  background: #f2f7ff;
+ 
 }
 
 .profile-img {
@@ -251,7 +233,14 @@ nav ul li a span {
 .hero p {
   font-size: 16px;
   color: #444;
-     }
+}
+  i{
+      color:;
+    font-size:100;
+  }
+  .endp{
+    font-size:40px;
+  } 
   </style>
 </head>
 
@@ -262,12 +251,12 @@ nav ul li a span {
   
 <body>
     <header>
-<svg width="80" height="80" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<svg style=" float:left;"  width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
   <!-- Circle background with shadow -->
   <circle cx="50" cy="50" r="45" fill="#1D3557" stroke="#A8DADC" stroke-width="3" filter="url(#shadow)" />
 
   <!-- Programming Icon -->
-  <text x="50" y="32" text-anchor="middle" font-size="12" fill="#F1FAEE" font-family="monospace">
+  <text x="50" y="32" text-anchor="middle" font-size="15" fill="#F1FAEE" font-family="monospace">
     &lt;/&gt;
   </text>
 
@@ -302,6 +291,10 @@ nav ul li a span {
     </header>
       
       <div class="container">
+        <section class="hero">
+  <div class="profile-img">
+    <img src="/storage/emulated/0/Ateeq/ok.jpg" alt="Ateeq Profile">
+  </div>
   <h2 class="fade-in">👋 Welcome to my personal blog!</h2>
   <p class="slide-up">
     I’m a passionate web developer and founder of <strong>Ateeq Website Solutions</strong> — 
@@ -319,103 +312,23 @@ nav ul li a span {
   </ul>
 
   <div class="contact bounce">
-<html>
-
-
-  
-  
-  
-<section class="hero">
-  <div class="profile-img">
-    <img src="/storage/emulated/0/ok.jpg" alt="Ateeq Profile">
-  </div>
-  <h1>Welcome to Ateeq Web Solutions</h1>
-  <p>Professional Web Design & Development</p>
-  <a href="https://ateeq42.github.io/Index">ateeq</a>
-</section>
-</body>
-
-       </html><html>
-
-<body>
-  <style>
-  .hero {
-  text-align: center;
-  padding: 40px 20px;
-  background: #f2f7ff;
-}
-
-.profile-img {
-  width: 150px;
-  height: 150px;
-  margin: 0 auto 20px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 5px solid #fff;
-  box-shadow: 0 0 20px rgba(0, 136, 255, 0.5);
-  transition: transform 0.5s ease, box-shadow 0.3s;
-  animation: zoomIn 1s ease forwards;
-}
-
-.profile-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.profile-img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 25px rgba(0, 136, 255, 0.8);
-}
-
-@keyframes zoomIn {
-  0% {
-    transform: scale(0.5);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-.hero h1 {
-  font-size: 24px;
-  color: #003366;
-  margin-top: 10px;
-}
-
-.hero p {
-  font-size: 16px;
-  color: #444;
-}
-  
-<section class="hero">
-  <div class="profile-img">
-    <img src="/storage/emulated/0/ok.jpg" alt="Ateeq Profile">
-  </div>
-  <h1>Welcome to Ateeq Web Solutions</h1>
-  <p>Professional Web Design & Development</p>
-  <a href="https://ateeq42.github.io/Index">ateeq</a>
-</section>
-
-
-     
-       
-       <p>📞 <strong>Contact Me:</strong> Let’s bring your idea to life!</p>
+    <p>📞 <strong>Contact Me:</strong> Let’s bring your idea to life!</p>
     <a href="https://wa.me/2349124646346" class="btn pulse">📩 Chat on WhatsApp</a>
   </div>
 
   <h3 class="spin">✨ Why Choose Us?</h3>
   <ul class="list">
     <li>✅ Professional</li>
-    <li>✅ Simple</fff    li>
+    <li>✅ Simple</li>
     <li>✅ Client-Focused</li>
   </ul>
+        
 </div>
-
-    <br><br>
+  <p class="endp">THAKS FOR CHOOSING US👍</p>
+   
+    
+     <br>
+      <br>   <br>   <br>
       
       <footer style="text-align: center; padding: 20px; background: #1D3557; color: #fff;">
   <p>Connect with me:</p>
@@ -424,15 +337,15 @@ nav ul li a span {
     <i class="fab fa-whatsapp fa-lg"></i>
   </a>
 
-  <a href="https:ateeq42.github.io/index" style="color: #1877F2; margin: 0 10px;">
+  <a href="#" style="color: #1877F2; margin: 0 10px;">
     <i class="fab fa-facebook fa-lg"></i>
   </a>
 
-  <a href="https:ateeq42.github.io/index" style="color: #1DA1F2; margin: 0 10px;">
+  <a href="#" style="color: #1DA1F2; margin: 0 10px;">
     <i class="fab fa-twitter fa-lg"></i>
   </a>
 
-  <a href="https:ateeq42.github.io/index" style="color: #0A66C2; margin: 0 10px;">
+  <a href="#" style="color: #0A66C2; margin: 0 10px;">
     <i class="fab fa-linkedin fa-lg"></i>
   </a>
 
@@ -445,4 +358,4 @@ nav ul li a span {
       
 </body>
 
-</html>
+     </html>
